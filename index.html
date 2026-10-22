@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUXE — Tu tienda de moda</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandDark: '#0f172a',
+            brandAccent: '#d97706',
+            brandBg: '#fafaf9'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👕</text></svg>" />
+</head>
+<body class="bg-stone-50 text-stone-900 font-sans antialiased">
+
+  <!-- ====== NAVBAR ====== -->
+  <header class="bg-white border-b border-stone-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-14">
+
+      <!-- Logo -->
+      <a href="index.html" class="text-2xl font-bold tracking-tight text-stone-900">
+        LUXE<span class="text-stone-400">.</span>
+      </a>
+
+      <!-- Nav desktop -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-stone-600">
+        <a href="catalog.html" class="hover:text-stone-900 transition-colors">Mujer</a>
+        <a href="catalog.html" class="hover:text-stone-900 transition-colors">Hombre</a>
+        <a href="catalog.html" class="hover:text-stone-900 transition-colors">Accesorios</a>
+        <a href="catalog.html" class="hover:text-stone-900 transition-colors">Novedades</a>
+        <a href="catalog.html" class="text-stone-900 font-semibold">Outlet</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="flex items-center gap-3">
+        <button class="hidden sm:block text-stone-500 hover:text-stone-900 transition-colors" aria-label="Buscar">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" />
+          </svg>
+        </button>
+        <a href="cart.html" class="text-stone-500 hover:text-stone-900 transition-colors relative" aria-label="Carrito">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" />
+          </svg>
+          <span class="absolute -top-2 -right-2 bg-stone-900 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">3</span>
+        </a>
+        <button class="md:hidden text-stone-500 hover:text-stone-900 transition-colors" aria-label="Menú">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====== HERO VISUAL ====== -->
+  <section class="relative bg-stone-100 overflow-hidden">
+    <div class="relative isolate w-full min-h-[60vh] sm:min-h-[70vh] lg:min-h-[80vh] flex items-center justify-center">
+      <div class="absolute inset-0 z-0 grid grid-cols-2">
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Mujer con un conjunto de moda contemporánea" class="h-full w-full object-cover object-center" />
+        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Hombre con un conjunto de moda contemporánea" class="h-full w-full object-cover object-center" />
+      </div>
+      <div aria-hidden="true" class="absolute inset-0 z-10 bg-white/45"></div>
+      <!-- Hero content -->
+      <div class="relative z-20 text-center px-4 max-w-3xl mx-auto">
+        <span class="inline-block bg-white/80 text-stone-700 text-xs font-medium px-4 py-1.5 rounded-full mb-5 border border-stone-200">Colección Otoño-Invierno 2026</span>
+        <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold text-stone-900 leading-tight tracking-tight">
+          TU MOMENTO
+        </h1>
+        <p class="mt-4 text-stone-600 text-base sm:text-lg max-w-xl mx-auto">
+          Lo nuevo de la temporada, a tu estilo.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="catalog.html" class="bg-black text-white px-8 py-3 rounded-md hover:bg-stone-800 transition text-sm font-medium">
+            Ver colección
+          </a>
+          <a href="catalog.html" class="border border-stone-300 bg-white/80 text-stone-700 px-8 py-3 rounded-md hover:bg-white transition text-sm font-medium">
+            Outlet — Hasta 50%
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CATEGORÍAS DESTACADAS ====== -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+      <!-- Mujer -->
+      <a href="catalog.html" class="group block bg-white rounded-lg overflow-hidden border border-stone-100 hover:border-stone-200 transition">
+        <div class="aspect-[4/3] bg-stone-100 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Modelo con ropa contemporánea para mujer" class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-300" />
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-stone-900 text-base">Mujer</h3>
+          <p class="text-sm text-stone-500">Las últimas tendencias</p>
+        </div>
+      </a>
+      <!-- Hombre -->
+      <a href="catalog.html" class="group block bg-white rounded-lg overflow-hidden border border-stone-100 hover:border-stone-200 transition">
+        <div class="aspect-[4/3] bg-stone-100 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Modelo con prendas de moda masculina" class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-300" />
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-stone-900 text-base">Hombre</h3>
+          <p class="text-sm text-stone-500">Moda urbana y clásicos</p>
+        </div>
+      </a>
+      <!-- Accesorios -->
+      <a href="catalog.html" class="group block bg-white rounded-lg overflow-hidden border border-stone-100 hover:border-stone-200 transition">
+        <div class="aspect-[4/3] bg-stone-100 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Mochila y accesorios para uso diario" class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-300" />
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-stone-900 text-base">Accesorios</h3>
+          <p class="text-sm text-stone-500">Complementos que marcan</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ====== NUEVOS LANZAMIENTOS ====== -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+    <div class="flex items-center justify-between mb-8">
+      <h2 class="text-2xl sm:text-3xl font-bold text-stone-900">Novedades</h2>
+      <a href="catalog.html" class="text-sm font-medium text-stone-700 hover:text-stone-900 transition flex items-center gap-1">
+        Ver todo
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5">
+
+      <!-- Producto 1 -->
+      <article class="bg-white group">
+        <a href="product.html" class="block">
+        <div class="aspect-[3/4] bg-stone-100 overflow-hidden relative">
+          <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Chaquetón oversize en tonos beige" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          <span class="absolute top-2 left-2 bg-stone-900 text-white text-[10px] font-semibold px-2 py-0.5">NUEVO</span>
+        </div>
+        <div class="pt-3 pb-1">
+          <h3 class="font-medium text-stone-900 text-sm sm:text-base">Chaquetón oversize</h3>
+          <p class="text-xs text-stone-500 mt-0.5">Beige / Marrón</p>
+          <div class="flex items-center gap-2 mt-2">
+            <span class="text-stone-900 font-bold text-sm sm:text-base">49,99 €</span>
+          </div>
+        </div>
+        </a>
+      </article>
+
+      <!-- Producto 2 -->
+      <article class="bg-white group">
+        <a href="product.html" class="block">
+        <div class="aspect-[3/4] bg-stone-100 overflow-hidden relative">
+          <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Vestido midi de temporada" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          <span class="absolute top-2 left-2 bg-stone-900 text-white text-[10px] font-semibold px-2 py-0.5">NUEVO</span>
+        </div>
+        <div class="pt-3 pb-1">
+          <h3 class="font-medium text-stone-900 text-sm sm:text-base">Vestido midi floral</h3>
+          <p class="text-xs text-stone-500 mt-0.5">Azul / Estampado</p>
+          <div class="flex items-center gap-2 mt-2">
+            <span class="text-stone-900 font-bold text-sm sm:text-base">29,99 €</span>
+          </div>
+        </div>
+        </a>
+      </article>
+
+      <!-- Producto 3 -->
+      <article class="bg-white group">
+        <a href="product.html" class="block">
+        <div class="aspect-[3/4] bg-stone-100 overflow-hidden relative">
+          <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Sudadera básica en tonos neutros" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          <span class="absolute top-2 left-2 bg-stone-900 text-white text-[10px] font-semibold px-2 py-0.5">NUEVO</span>
+        </div>
+        <div class="pt-3 pb-1">
+          <h3 class="font-medium text-stone-900 text-sm sm:text-base">Sudadera básica</h3>
+          <p class="text-xs text-stone-500 mt-0.5">Negro / Gris</p>
+          <div class="flex items-center gap-2 mt-2">
+            <span class="text-stone-900 font-bold text-sm sm:text-base">19,99 €</span>
+          </div>
+        </div>
+        </a>
+      </article>
+
+      <!-- Producto 4 -->
+      <article class="bg-white group">
+        <a href="product.html" class="block">
+        <div class="aspect-[3/4] bg-stone-100 overflow-hidden relative">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Zapatillas urbanas de estilo deportivo" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          <span class="absolute top-2 left-2 bg-stone-900 text-white text-[10px] font-semibold px-2 py-0.5">NUEVO</span>
+        </div>
+        <div class="pt-3 pb-1">
+          <h3 class="font-medium text-stone-900 text-sm sm:text-base">Zapatillas urbanas</h3>
+          <p class="text-xs text-stone-500 mt-0.5">Blanco / Negro</p>
+          <div class="flex items-center gap-2 mt-2">
+            <span class="text-stone-900 font-bold text-sm sm:text-base">39,99 €</span>
+          </div>
+        </div>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ====== BANNER PROMOCIONAL ====== -->
+  <section class="bg-stone-100 border-y border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div class="text-center lg:text-left">
+          <span class="inline-block bg-black text-white text-xs font-semibold px-3 py-1 mb-3">OFERTA</span>
+          <h2 class="text-2xl sm:text-4xl font-bold text-stone-900">Envío gratis</h2>
+          <p class="text-stone-600 mt-2">en pedidos superiores a 30 € · Devolución gratuita</p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="checkout.html" class="bg-black text-white px-8 py-3 rounded-md hover:bg-stone-800 transition text-sm font-medium text-center">
+            Comprar ahora
+          </a>
+          <a href="checkout.html" class="border border-stone-300 text-stone-700 px-8 py-3 rounded-md hover:bg-white transition text-sm font-medium text-center">
+            Ver condiciones
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== MÁS VENDIDOS ====== -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+    <div class="flex items-center justify-between mb-8">
+      <h2 class="text-2xl sm:text-3xl font-bold text-stone-900">Más vendidos</h2>
+      <a href="catalog.html" class="text-sm font-medium text-stone-700 hover:text-stone-900 transition flex items-center gap-1">
+        Ver todo
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5">
+
+      <!-- Producto 1 -->
+      <article class="bg-white group">
+        <a href="product.html" class="block">
+        <div class="aspect-[3/4] bg-stone-100 overflow-hidden relative">
+          <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Cazadora vaquera de estilo clásico" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          <span class="absolute top-2 left-2 bg-black text-white text-[10px] font-semibold px-2 py-0.5">-30%</span>
+        </div>
+        <div class="pt-3 pb-1">
+          <h3 class="font-medium text-stone-900 text-sm sm:text-base">Cazadora vaquera</h3>
+          <p class="text-xs text-stone-500 mt-0.5">Denim claro</p>
+          <div class="flex items-center gap-2 mt-2">
+            <span class="text-stone-900 font-bold text-sm sm:text-base">24,99 €</span>
+            <span class="text-xs text-stone-400 line-through">34,99 €</span>
+          </div>
+        </div>
+        </a>
+      </article>
+
+      <!-- Producto 2 -->
+      <article class="bg-white group">
+        <a href="product.html" class="block">
+        <div class="aspect-[3/4] bg-stone-100 overflow-hidden relative">
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Camiseta básica de algodón" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="pt-3 pb-1">
+          <h3 class="font-medium text-stone-900 text-sm sm:text-base">Camiseta algodón</h3>
+          <p class="text-xs text-stone-500 mt-0.5">Pack 2 unidades</p>
+          <div class="flex items-center gap-2 mt-2">
+            <span class="text-stone-900 font-bold text-sm sm:text-base">12,99 €</span>
+          </div>
+        </div>
+        </a>
+      </article>
+
+      <!-- Producto 3 -->
+      <article class="bg-white group">
+        <a href="product.html" class="block">
+        <div class="aspect-[3/4] bg-stone-100 overflow-hidden relative">
+          <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Pantalón cargo de corte casual" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="pt-3 pb-1">
+          <h3 class="font-medium text-stone-900 text-sm sm:text-base">Pantalón cargo</h3>
+          <p class="text-xs text-stone-500 mt-0.5">Caqui / Negro</p>
+          <div class="flex items-center gap-2 mt-2">
+            <span class="text-stone-900 font-bold text-sm sm:text-base">29,99 €</span>
+          </div>
+        </div>
+        </a>
+      </article>
+
+      <!-- Producto 4 -->
+      <article class="bg-white group">
+        <a href="product.html" class="block">
+        <div class="aspect-[3/4] bg-stone-100 overflow-hidden relative">
+          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Mochila urbana negra" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          <span class="absolute top-2 left-2 bg-black text-white text-[10px] font-semibold px-2 py-0.5">-20%</span>
+        </div>
+        <div class="pt-3 pb-1">
+          <h3 class="font-medium text-stone-900 text-sm sm:text-base">Mochila urbana</h3>
+          <p class="text-xs text-stone-500 mt-0.5">Negro</p>
+          <div class="flex items-center gap-2 mt-2">
+            <span class="text-stone-900 font-bold text-sm sm:text-base">23,99 €</span>
+            <span class="text-xs text-stone-400 line-through">29,99 €</span>
+          </div>
+        </div>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ====== NEWSLETTER ====== -->
+  <section class="border-y border-stone-200 bg-stone-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-14 text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold text-stone-900">¿Te lo vas a perder?</h2>
+      <p class="text-stone-600 mt-2">Suscríbete y recibe un 10 % de descuento en tu primer pedido.</p>
+      <form class="mt-6 max-w-lg mx-auto flex flex-col sm:flex-row gap-3">
+        <label for="email" class="sr-only">Email</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="Tu correo electrónico"
+          class="flex-1 px-4 py-3 border border-stone-200 rounded-md text-sm text-stone-900 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-900/10 focus:border-stone-900"
+        />
+        <button type="submit" class="bg-black text-white px-6 py-3 rounded-md hover:bg-stone-800 transition text-sm font-medium">
+          Suscribirme
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="bg-stone-100 border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
+
+        <!-- Brand -->
+        <div class="col-span-2 sm:col-span-3 lg:col-span-1">
+          <a href="index.html" class="text-2xl font-bold tracking-tight text-stone-900">
+            LUXE<span class="text-stone-400">.</span>
+          </a>
+          <p class="mt-3 text-sm text-stone-600 leading-relaxed">
+            Moda joven, moderna y al mejor precio.
+          </p>
+          <div class="flex items-center gap-3 mt-5">
+            <span class="text-stone-400" aria-hidden="true">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </span>
+            <span class="text-stone-400" aria-hidden="true">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </span>
+            <span class="text-stone-400" aria-hidden="true">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </span>
+          </div>
+        </div>
+
+        <!-- Categorías -->
+        <div>
+          <h4 class="font-semibold text-sm text-stone-900 mb-4">Categorías</h4>
+          <ul class="space-y-2.5 text-sm text-stone-600">
+            <li><a href="catalog.html" class="hover:text-stone-900 transition">Mujer</a></li>
+            <li><a href="catalog.html" class="hover:text-stone-900 transition">Hombre</a></li>
+            <li><a href="catalog.html" class="hover:text-stone-900 transition">Accesorios</a></li>
+            <li><a href="catalog.html" class="hover:text-stone-900 transition">Novedades</a></li>
+            <li><a href="catalog.html" class="text-stone-900 font-semibold">Outlet</a></li>
+          </ul>
+        </div>
+
+        <!-- Ayuda -->
+        <div>
+          <h4 class="font-semibold text-sm text-stone-900 mb-4">Ayuda</h4>
+          <ul class="space-y-2.5 text-sm text-stone-600">
+            <li><a href="mailto:hola@luxe-store.com" class="hover:text-stone-900 transition">Contacto</a></li>
+            <li><a href="checkout.html" class="hover:text-stone-900 transition">Envíos y devoluciones</a></li>
+            <li><a href="catalog.html" class="hover:text-stone-900 transition">Guía de tallas</a></li>
+            <li><a href="checkout.html" class="hover:text-stone-900 transition">Pago seguro</a></li>
+            <li><a href="catalog.html" class="hover:text-stone-900 transition">Tarjeta regalo</a></li>
+          </ul>
+        </div>
+
+        <!-- Empresa -->
+        <div>
+          <h4 class="font-semibold text-sm text-stone-900 mb-4">Empresa</h4>
+          <ul class="space-y-2.5 text-sm text-stone-600">
+            <li><a href="index.html" class="hover:text-stone-900 transition">Sobre LUXE</a></li>
+            <li><a href="catalog.html" class="hover:text-stone-900 transition">Tiendas</a></li>
+            <li><span class="text-stone-600">Trabaja con nosotros</span></li>
+            <li><span class="text-stone-600">Prensa</span></li>
+          </ul>
+        </div>
+
+        <!-- Atención al cliente extra -->
+        <div>
+          <h4 class="font-semibold text-sm text-stone-900 mb-4">Atención</h4>
+          <ul class="space-y-2.5 text-sm text-stone-600">
+            <li><span class="block">📞 900 123 456</span></li>
+            <li><span class="block">📧 hola@luxe-store.com</span></li>
+            <li><span class="block text-xs">Lun–Sáb 9:00–21:00</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="mt-12 pt-6 border-t border-stone-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400">
+        <p>&copy; 2026 LUXE. Todos los derechos reservados.</p>
+        <div class="flex items-center gap-5">
+          <span>Aviso legal</span>
+          <span>Privacidad</span>
+          <span>Cookies</span>
+          <span>Configurar cookies</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
