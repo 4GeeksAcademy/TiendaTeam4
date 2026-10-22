@@ -1,24 +1,29 @@
 # TiendaTeam4
 
-TiendaTeam4 es una tienda en linea creada como proyecto colaborativo de 4Geeks.
+TiendaTeam4 es una tienda en línea desarrollada como proyecto colaborativo de 4Geeks, con el objetivo de practicar HTML5, Tailwind CSS y trabajo en equipo mediante Git y GitHub.
 
 ## Stack
 
 - HTML5
 - Tailwind CSS mediante CDN
 
-## Paginas
+## Páginas
 
-- `index`: pagina principal
-- `catalog`: catalogo de productos
-- `product`: detalle de un producto
-- `cart`: carrito de compras
-- `checkout`: proceso de pago
+- `index.html`: página principal
+- `catalog.html`: catálogo de productos
+- `product.html`: detalle del producto
+- `cart.html`: carrito de compras
+- `checkout.html`: proceso de pago
 
-## Como abrir el proyecto
+## Cómo abrir el proyecto
 
-Abre `index.html` directamente en un navegador. Tailwind CSS se carga desde un CDN, por lo que se necesita conexion a internet.
+Abre `index.html` en un navegador. Tailwind CSS se carga mediante CDN y requiere conexión a internet.
 
-## Colaboracion
+## Flujo de trabajo
 
-El equipo trabaja con ramas para los cambios y Pull Requests para revisarlos e integrarlos.
+1. Crea una rama independiente para cada tarea.
+2. Registra los cambios con commits descriptivos.
+3. Sube cada rama a GitHub.
+4. Abre un Pull Request.
+5. Solicita y completa la revisión.
+6. Tras la aprobación, integra el cambio en `main`.
