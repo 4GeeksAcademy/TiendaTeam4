@@ -5,19 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Finalizar compra | LUXE</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brandDark: '#0f172a',
-            brandAccent: '#d97706',
-            brandBg: '#fafaf9'
-          }
-        }
-      }
-    };
-  </script>
 </head>
 <body class="bg-stone-50 text-stone-900 font-sans antialiased">
   <header class="sticky top-0 z-50 border-b border-stone-200 bg-white">
@@ -47,16 +34,16 @@
       <p class="text-xs font-semibold uppercase tracking-wide text-stone-500">LUXE · Compra segura</p>
       <h1 class="mt-2 text-3xl font-bold text-stone-900 sm:text-4xl">Finalizar compra</h1>
 
-      <ol class="mt-7 grid grid-cols-3 gap-2 sm:gap-4" aria-label="Pasos de compra">
-        <li class="flex items-center gap-2 border-b-2 border-stone-900 pb-3 text-sm font-semibold text-stone-900 sm:gap-3">
+      <ol class="mt-7 grid grid-cols-3 gap-2 border-b border-stone-200 sm:gap-4" aria-label="Pasos de compra">
+        <li aria-current="step" class="flex items-center gap-2 border-b-2 border-stone-900 pb-3 text-sm font-semibold text-stone-900 sm:gap-3">
           <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-stone-900 text-xs text-white">1</span>
           <span>Datos</span>
         </li>
-        <li class="flex items-center gap-2 border-b-2 border-stone-200 pb-3 text-sm text-stone-500 sm:gap-3">
+        <li class="flex items-center gap-2 border-b-2 border-transparent pb-3 text-sm text-stone-500 sm:gap-3">
           <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-stone-200 text-xs text-stone-700">2</span>
           <span>Envío</span>
         </li>
-        <li class="flex items-center gap-2 border-b-2 border-stone-200 pb-3 text-sm text-stone-500 sm:gap-3">
+        <li class="flex items-center gap-2 border-b-2 border-transparent pb-3 text-sm text-stone-500 sm:gap-3">
           <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-stone-200 text-xs text-stone-700">3</span>
           <span>Pago</span>
         </li>
@@ -64,44 +51,45 @@
     </header>
 
     <div class="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_360px] lg:gap-12">
-      <form class="space-y-6" aria-label="Datos para finalizar la compra">
-        <fieldset class="border-t border-stone-200 pt-6">
-          <legend class="mb-5 flex items-center gap-3 text-lg font-semibold text-stone-900">
+      <form class="space-y-8" aria-label="Datos para finalizar la compra">
+        <p class="text-sm text-stone-500"><span class="font-semibold text-red-600">*</span> Campos obligatorios</p>
+        <fieldset class="border-t border-stone-200 pt-7">
+          <legend class="mb-6 flex items-center gap-3 text-lg font-semibold text-stone-900">
             <span class="flex h-8 w-8 items-center justify-center rounded-full bg-stone-900 text-sm text-white">1</span>
             Datos personales
           </legend>
           <div class="grid gap-4 sm:grid-cols-2">
             <div>
-              <label for="first-name" class="mb-1.5 block text-sm font-medium text-stone-700">Nombre</label>
+              <label for="first-name" class="mb-1.5 block text-sm font-medium text-stone-700">Nombre <span aria-hidden="true" class="text-red-600">*</span></label>
               <input id="first-name" name="first-name" type="text" autocomplete="given-name" required class="w-full rounded-md border border-stone-300 bg-white px-3.5 py-3 text-sm text-stone-900 outline-none transition placeholder:text-stone-400 focus:border-stone-900 focus:ring-2 focus:ring-stone-900/10" />
             </div>
             <div>
-              <label for="last-name" class="mb-1.5 block text-sm font-medium text-stone-700">Apellidos</label>
+              <label for="last-name" class="mb-1.5 block text-sm font-medium text-stone-700">Apellidos <span aria-hidden="true" class="text-red-600">*</span></label>
               <input id="last-name" name="last-name" type="text" autocomplete="family-name" required class="w-full rounded-md border border-stone-300 bg-white px-3.5 py-3 text-sm text-stone-900 outline-none transition placeholder:text-stone-400 focus:border-stone-900 focus:ring-2 focus:ring-stone-900/10" />
             </div>
             <div>
-              <label for="email" class="mb-1.5 block text-sm font-medium text-stone-700">Email</label>
+              <label for="email" class="mb-1.5 block text-sm font-medium text-stone-700">Email <span aria-hidden="true" class="text-red-600">*</span></label>
               <input id="email" name="email" type="email" autocomplete="email" required class="w-full rounded-md border border-stone-300 bg-white px-3.5 py-3 text-sm text-stone-900 outline-none transition placeholder:text-stone-400 focus:border-stone-900 focus:ring-2 focus:ring-stone-900/10" />
             </div>
             <div>
-              <label for="phone" class="mb-1.5 block text-sm font-medium text-stone-700">Teléfono</label>
+              <label for="phone" class="mb-1.5 block text-sm font-medium text-stone-700">Teléfono <span aria-hidden="true" class="text-red-600">*</span></label>
               <input id="phone" name="phone" type="tel" autocomplete="tel" required class="w-full rounded-md border border-stone-300 bg-white px-3.5 py-3 text-sm text-stone-900 outline-none transition placeholder:text-stone-400 focus:border-stone-900 focus:ring-2 focus:ring-stone-900/10" />
             </div>
           </div>
         </fieldset>
 
-        <fieldset class="border-t border-stone-200 pt-6">
-          <legend class="mb-5 flex items-center gap-3 text-lg font-semibold text-stone-900">
+        <fieldset class="border-t border-stone-200 pt-7">
+          <legend class="mb-6 flex items-center gap-3 text-lg font-semibold text-stone-900">
             <span class="flex h-8 w-8 items-center justify-center rounded-full bg-stone-900 text-sm text-white">2</span>
             Dirección de envío
           </legend>
           <div class="grid gap-4 sm:grid-cols-2">
             <div class="sm:col-span-2">
-              <label for="address" class="mb-1.5 block text-sm font-medium text-stone-700">Dirección</label>
+              <label for="address" class="mb-1.5 block text-sm font-medium text-stone-700">Dirección <span aria-hidden="true" class="text-red-600">*</span></label>
               <input id="address" name="address" type="text" autocomplete="address-line1" required class="w-full rounded-md border border-stone-300 bg-white px-3.5 py-3 text-sm text-stone-900 outline-none transition focus:border-stone-900 focus:ring-2 focus:ring-stone-900/10" />
             </div>
             <div>
-              <label for="address-number" class="mb-1.5 block text-sm font-medium text-stone-700">Número</label>
+              <label for="address-number" class="mb-1.5 block text-sm font-medium text-stone-700">Número <span aria-hidden="true" class="text-red-600">*</span></label>
               <input id="address-number" name="address-number" type="text" autocomplete="address-line2" required class="w-full rounded-md border border-stone-300 bg-white px-3.5 py-3 text-sm text-stone-900 outline-none transition focus:border-stone-900 focus:ring-2 focus:ring-stone-900/10" />
             </div>
             <div>
@@ -109,19 +97,19 @@
               <input id="unit" name="unit" type="text" autocomplete="address-line2" class="w-full rounded-md border border-stone-300 bg-white px-3.5 py-3 text-sm text-stone-900 outline-none transition focus:border-stone-900 focus:ring-2 focus:ring-stone-900/10" />
             </div>
             <div>
-              <label for="postal-code" class="mb-1.5 block text-sm font-medium text-stone-700">Código postal</label>
+              <label for="postal-code" class="mb-1.5 block text-sm font-medium text-stone-700">Código postal <span aria-hidden="true" class="text-red-600">*</span></label>
               <input id="postal-code" name="postal-code" type="text" inputmode="numeric" autocomplete="postal-code" required class="w-full rounded-md border border-stone-300 bg-white px-3.5 py-3 text-sm text-stone-900 outline-none transition focus:border-stone-900 focus:ring-2 focus:ring-stone-900/10" />
             </div>
             <div>
-              <label for="city" class="mb-1.5 block text-sm font-medium text-stone-700">Ciudad</label>
+              <label for="city" class="mb-1.5 block text-sm font-medium text-stone-700">Ciudad <span aria-hidden="true" class="text-red-600">*</span></label>
               <input id="city" name="city" type="text" autocomplete="address-level2" required class="w-full rounded-md border border-stone-300 bg-white px-3.5 py-3 text-sm text-stone-900 outline-none transition focus:border-stone-900 focus:ring-2 focus:ring-stone-900/10" />
             </div>
             <div>
-              <label for="province" class="mb-1.5 block text-sm font-medium text-stone-700">Provincia</label>
+              <label for="province" class="mb-1.5 block text-sm font-medium text-stone-700">Provincia <span aria-hidden="true" class="text-red-600">*</span></label>
               <input id="province" name="province" type="text" autocomplete="address-level1" required class="w-full rounded-md border border-stone-300 bg-white px-3.5 py-3 text-sm text-stone-900 outline-none transition focus:border-stone-900 focus:ring-2 focus:ring-stone-900/10" />
             </div>
             <div>
-              <label for="country" class="mb-1.5 block text-sm font-medium text-stone-700">País</label>
+              <label for="country" class="mb-1.5 block text-sm font-medium text-stone-700">País <span aria-hidden="true" class="text-red-600">*</span></label>
               <select id="country" name="country" autocomplete="country-name" required class="w-full rounded-md border border-stone-300 bg-white px-3.5 py-3 text-sm text-stone-900 outline-none transition focus:border-stone-900 focus:ring-2 focus:ring-stone-900/10">
                 <option value="" selected disabled>Selecciona un país</option>
                 <option value="ES">España</option>
@@ -132,33 +120,33 @@
           </div>
         </fieldset>
 
-        <fieldset class="border-t border-stone-200 pt-6">
-          <legend class="mb-5 flex items-center gap-3 text-lg font-semibold text-stone-900">
+        <fieldset class="border-t border-stone-200 pt-7">
+          <legend class="mb-6 flex items-center gap-3 text-lg font-semibold text-stone-900">
             <span class="flex h-8 w-8 items-center justify-center rounded-full bg-stone-900 text-sm text-white">3</span>
             Pago con tarjeta
           </legend>
           <div class="grid gap-4 sm:grid-cols-2">
             <div class="sm:col-span-2">
-              <label for="cardholder" class="mb-1.5 block text-sm font-medium text-stone-700">Nombre del titular</label>
+              <label for="cardholder" class="mb-1.5 block text-sm font-medium text-stone-700">Nombre del titular <span aria-hidden="true" class="text-red-600">*</span></label>
               <input id="cardholder" name="cardholder" type="text" autocomplete="cc-name" required class="w-full rounded-md border border-stone-300 bg-white px-3.5 py-3 text-sm text-stone-900 outline-none transition focus:border-stone-900 focus:ring-2 focus:ring-stone-900/10" />
             </div>
             <div class="sm:col-span-2">
-              <label for="card-number" class="mb-1.5 block text-sm font-medium text-stone-700">Número de tarjeta</label>
+              <label for="card-number" class="mb-1.5 block text-sm font-medium text-stone-700">Número de tarjeta <span aria-hidden="true" class="text-red-600">*</span></label>
               <input id="card-number" name="card-number" type="text" inputmode="numeric" autocomplete="cc-number" minlength="13" maxlength="19" required class="w-full rounded-md border border-stone-300 bg-white px-3.5 py-3 text-sm text-stone-900 outline-none transition focus:border-stone-900 focus:ring-2 focus:ring-stone-900/10" />
             </div>
             <div>
-              <label for="expiry" class="mb-1.5 block text-sm font-medium text-stone-700">Fecha de caducidad</label>
+              <label for="expiry" class="mb-1.5 block text-sm font-medium text-stone-700">Fecha de caducidad <span aria-hidden="true" class="text-red-600">*</span></label>
               <input id="expiry" name="expiry" type="month" autocomplete="cc-exp" required class="w-full rounded-md border border-stone-300 bg-white px-3.5 py-3 text-sm text-stone-900 outline-none transition focus:border-stone-900 focus:ring-2 focus:ring-stone-900/10" />
             </div>
             <div>
-              <label for="cvv" class="mb-1.5 block text-sm font-medium text-stone-700">CVV</label>
+              <label for="cvv" class="mb-1.5 block text-sm font-medium text-stone-700">CVV <span aria-hidden="true" class="text-red-600">*</span></label>
               <input id="cvv" name="cvv" type="text" inputmode="numeric" autocomplete="cc-csc" minlength="3" maxlength="4" required class="w-full rounded-md border border-stone-300 bg-white px-3.5 py-3 text-sm text-stone-900 outline-none transition focus:border-stone-900 focus:ring-2 focus:ring-stone-900/10" />
             </div>
           </div>
         </fieldset>
 
         <div class="border-t border-stone-200 pt-6">
-          <button type="button" class="w-full rounded-md bg-black px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-stone-800 focus:outline-none focus:ring-2 focus:ring-stone-900 focus:ring-offset-2 sm:w-auto">
+          <button type="button" class="w-full rounded-md bg-black px-6 py-4 text-base font-semibold text-white transition hover:bg-stone-800 focus:outline-none focus:ring-2 focus:ring-stone-900 focus:ring-offset-2">
             Realizar pedido
           </button>
           <p class="mt-3 text-sm text-stone-500">Pago seguro · Tus datos están protegidos</p>
@@ -204,7 +192,7 @@
             <dt>Impuestos</dt>
             <dd>25,19 €</dd>
           </div>
-          <div class="flex justify-between gap-4 border-t border-stone-200 pt-4 text-base font-semibold text-stone-900">
+          <div class="flex justify-between gap-4 border-t-2 border-stone-300 pt-4 text-lg font-bold text-stone-900">
             <dt>Total</dt>
             <dd>145,16 €</dd>
           </div>
