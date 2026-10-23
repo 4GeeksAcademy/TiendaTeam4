@@ -40,3 +40,10 @@
 - Evita duplicaciones innecesarias.
 - Respeta los cambios realizados por otros colaboradores.
 
+## Decisiones
+
+- Debido a la restricción de no usar JavaScript, hemos optado por crear la carpeta `products/` en la raíz, con un archivo HTML independiente por producto, en lugar de cargar distintos productos dinámicamente en `product.html`.
+- Las tarjetas del catálogo y los productos destacados de inicio enlazan a su ficha correspondiente dentro de `products/`.
+- El botón «Añadir al carrito» es únicamente visual: no añade productos ni actualiza cantidades o totales. Esta interacción queda fuera del alcance del prototipo estático, por la restricción de JavaScript y la ausencia de lógica de servidor para gestionar el carrito.
+- El enlace al carrito permite navegar a `cart.html`, pero no transfiere el producto ni la talla seleccionada.
+
