@@ -5,20 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vestido estampado | LUXE</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brandDark: '#0f172a',
-            brandAccent: '#d97706',
-            brandBg: '#fafaf9'
-          }
-        }
-      }
-    };
-  </script>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👕</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20100%20100'%3E%3Ctext%20y%3D'.9em'%20font-size%3D'90'%3E%F0%9F%91%95%3C%2Ftext%3E%3C%2Fsvg%3E" />
 </head>
 <body class="bg-stone-50 text-stone-900 font-sans antialiased">
   <header class="bg-white border-b border-stone-200 sticky top-0 z-50">
@@ -93,24 +80,24 @@
               Añadir al carrito
             </button>
           </form>
+          <div class="mt-6 border-y border-stone-200 divide-y divide-stone-200">
+            <details class="py-4">
+              <summary id="materials-heading" class="cursor-pointer text-sm font-semibold text-stone-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900">Materiales y cuidados</summary>
+              <p class="mt-4 text-sm text-stone-600 leading-relaxed">Composición propuesta: Tejido de viscosa.</p>
+              <ul class="mt-3 space-y-2 text-sm text-stone-600">
+              <li>Consultar la etiqueta antes de lavar.</li>
+              <li>Seguir las indicaciones de secado de la etiqueta.</li>
+              </ul>
+            </details>
+            <details class="py-4">
+              <summary id="uses-heading" class="cursor-pointer text-sm font-semibold text-stone-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900">Usos y combinaciones</summary>
+              <p class="mt-4 text-sm text-stone-600 leading-relaxed">Con sandalias o una chaqueta ligera.</p>
+            </details>
+          </div>
           <a href="../catalog.html" class="inline-block mt-6 text-sm text-stone-600 underline underline-offset-4 hover:text-stone-900 transition">Volver al catálogo</a>
         </div>
       </div>
 
-      <div class="mt-12 border-t border-stone-200 pt-8 grid gap-8 md:grid-cols-2 lg:gap-14">
-        <section aria-labelledby="materials-heading">
-          <h2 id="materials-heading" class="text-xl font-bold text-stone-900">Materiales y cuidados</h2>
-          <p class="mt-4 text-sm text-stone-600 leading-relaxed">Composición propuesta: Tejido de viscosa.</p>
-          <ul class="mt-3 space-y-2 text-sm text-stone-600">
-            <li>Consultar la etiqueta antes de lavar.</li>
-            <li>Seguir las indicaciones de secado de la etiqueta.</li>
-          </ul>
-        </section>
-        <section aria-labelledby="uses-heading">
-          <h2 id="uses-heading" class="text-xl font-bold text-stone-900">Usos y combinaciones</h2>
-          <p class="mt-4 text-sm text-stone-600 leading-relaxed">Con sandalias o una chaqueta ligera.</p>
-        </section>
-      </div>
     </article>
   </main>
 
@@ -135,7 +122,7 @@
           </div>
         </div>
         <div>
-          <h4 class="font-semibold text-sm text-stone-900 mb-4">Categorías</h4>
+          <h2 class="font-semibold text-sm text-stone-900 mb-4">Categorías</h2>
           <ul class="space-y-2.5 text-sm text-stone-600">
             <li><a href="../catalog.html" class="hover:text-stone-900 transition">Mujer</a></li>
             <li><a href="../catalog.html" class="hover:text-stone-900 transition">Hombre</a></li>
@@ -145,7 +132,7 @@
           </ul>
         </div>
         <div>
-          <h4 class="font-semibold text-sm text-stone-900 mb-4">Ayuda</h4>
+          <h2 class="font-semibold text-sm text-stone-900 mb-4">Ayuda</h2>
           <ul class="space-y-2.5 text-sm text-stone-600">
             <li><a href="mailto:hola@luxe-store.com" class="hover:text-stone-900 transition">Contacto</a></li>
             <li><a href="../checkout.html" class="hover:text-stone-900 transition">Envíos y devoluciones</a></li>
@@ -155,7 +142,7 @@
           </ul>
         </div>
         <div>
-          <h4 class="font-semibold text-sm text-stone-900 mb-4">Empresa</h4>
+          <h2 class="font-semibold text-sm text-stone-900 mb-4">Empresa</h2>
           <ul class="space-y-2.5 text-sm text-stone-600">
             <li><a href="../index.html" class="hover:text-stone-900 transition">Sobre LUXE</a></li>
             <li><a href="../catalog.html" class="hover:text-stone-900 transition">Tiendas</a></li>
@@ -164,7 +151,7 @@
           </ul>
         </div>
         <div>
-          <h4 class="font-semibold text-sm text-stone-900 mb-4">Atención</h4>
+          <h2 class="font-semibold text-sm text-stone-900 mb-4">Atención</h2>
           <ul class="space-y-2.5 text-sm text-stone-600">
             <li><span class="block">📞 900 123 456</span></li>
             <li><span class="block">📧 hola@luxe-store.com</span></li>
