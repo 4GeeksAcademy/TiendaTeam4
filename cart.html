@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu carrito | LUXE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-stone-50 text-stone-900 font-sans antialiased flex flex-col">
+  <a href="#contenido" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-white focus:p-3 focus:text-stone-900 focus:outline focus:outline-2 focus:outline-stone-900">Saltar al contenido</a>
+
+  <header class="bg-white border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-14 gap-4">
+      <a href="index.html" class="text-2xl font-bold text-stone-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900" aria-label="LUXE, página de inicio">
+        LUXE<span class="text-stone-400">.</span>
+      </a>
+      <nav class="flex items-center gap-4 md:gap-6 text-sm font-medium text-stone-600" aria-label="Navegación principal">
+        <a href="catalog.html" class="py-2 hover:text-stone-900 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900">Catálogo</a>
+        <a href="cart.html" class="relative flex h-11 w-11 items-center justify-center text-stone-900 hover:bg-stone-100 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-stone-900" aria-label="Tu carrito, 3 productos" aria-current="page">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" />
+          </svg>
+          <span class="absolute top-0 right-0 bg-stone-900 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center" aria-hidden="true">3</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 flex-1">
+    <h1 class="text-3xl sm:text-4xl font-bold">Tu carrito</h1>
+    <p class="mt-3 text-sm text-stone-600">Revisa tus productos antes de finalizar la compra.</p>
+
+    <div class="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+      <section class="min-w-0 lg:col-span-2" aria-labelledby="productos-titulo">
+        <h2 id="productos-titulo" class="mb-4 text-lg font-semibold">Productos <span class="text-sm font-normal text-stone-600">(3)</span></h2>
+        <ul class="space-y-4">
+          <li>
+            <article class="rounded-lg border border-stone-200 bg-white p-4 sm:p-5 shadow-sm hover:shadow-md transition" aria-labelledby="chaqueton-titulo">
+              <div class="grid grid-cols-[5rem_minmax(0,1fr)] items-start gap-4 md:grid-cols-[6rem_minmax(0,1fr)_auto_auto]">
+                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Chaquetón oversize en tonos beige" width="112" height="140" class="h-28 w-20 object-cover bg-stone-100 md:h-32 md:w-24">
+                <div class="min-w-0">
+                  <h3 id="chaqueton-titulo" class="text-base font-medium">Chaquetón oversize</h3>
+                  <p class="mt-1 text-sm text-stone-600">Beige / Marrón</p>
+                  <dl class="mt-2 space-y-1 text-sm">
+                    <div class="flex flex-wrap gap-x-2"><dt class="text-stone-600">Talla:</dt><dd>M</dd></div>
+                    <div class="flex flex-wrap gap-x-2"><dt class="text-stone-600">Precio unitario:</dt><dd class="whitespace-nowrap">49,99 €</dd></div>
+                  </dl>
+                  <button type="button" class="mt-1 min-h-11 text-xs text-stone-600 underline underline-offset-4 hover:text-stone-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900">Eliminar<span class="sr-only"> Chaquetón oversize</span></button>
+                </div>
+                <div class="col-span-2 flex items-center justify-between gap-3 border-t border-stone-200 pt-3 md:contents">
+                    <div class="flex shrink-0 items-center gap-2 text-sm md:self-center">
+                      <label for="cantidad-chaqueton" class="text-stone-600">Cantidad<span class="sr-only"> de Chaquetón oversize</span>:</label>
+                        <select id="cantidad-chaqueton" name="cantidad-chaqueton" class="min-h-11 rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-900 focus:border-stone-900 focus:outline-none focus:ring-2 focus:ring-stone-900 focus:ring-offset-2">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                    </div>
+                  <dl class="min-w-0 text-sm md:self-center md:justify-self-end">
+                    <div class="flex flex-wrap items-baseline justify-end gap-x-2"><dt class="text-stone-600">Total:</dt><dd class="font-semibold whitespace-nowrap tabular-nums">49,99 €</dd></div>
+                  </dl>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="rounded-lg border border-stone-200 bg-white p-4 sm:p-5 shadow-sm hover:shadow-md transition" aria-labelledby="vestido-titulo">
+              <div class="grid grid-cols-[5rem_minmax(0,1fr)] items-start gap-4 md:grid-cols-[6rem_minmax(0,1fr)_auto_auto]">
+                <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Vestido midi floral azul" width="112" height="140" class="h-28 w-20 object-cover bg-stone-100 md:h-32 md:w-24">
+                <div class="min-w-0">
+                  <h3 id="vestido-titulo" class="text-base font-medium">Vestido midi floral</h3>
+                  <p class="mt-1 text-sm text-stone-600">Azul / Estampado</p>
+                  <dl class="mt-2 space-y-1 text-sm">
+                    <div class="flex flex-wrap gap-x-2"><dt class="text-stone-600">Talla:</dt><dd>S</dd></div>
+                    <div class="flex flex-wrap gap-x-2"><dt class="text-stone-600">Precio unitario:</dt><dd class="whitespace-nowrap">29,99 €</dd></div>
+                  </dl>
+                  <button type="button" class="mt-1 min-h-11 text-xs text-stone-600 underline underline-offset-4 hover:text-stone-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900">Eliminar<span class="sr-only"> Vestido midi floral</span></button>
+                </div>
+                <div class="col-span-2 flex items-center justify-between gap-3 border-t border-stone-200 pt-3 md:contents">
+                    <div class="flex shrink-0 items-center gap-2 text-sm md:self-center">
+                      <label for="cantidad-vestido" class="text-stone-600">Cantidad<span class="sr-only"> de Vestido midi floral</span>:</label>
+                        <select id="cantidad-vestido" name="cantidad-vestido" class="min-h-11 rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-900 focus:border-stone-900 focus:outline-none focus:ring-2 focus:ring-stone-900 focus:ring-offset-2">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                    </div>
+                  <dl class="min-w-0 text-sm md:self-center md:justify-self-end">
+                    <div class="flex flex-wrap items-baseline justify-end gap-x-2"><dt class="text-stone-600">Total:</dt><dd class="font-semibold whitespace-nowrap tabular-nums">29,99 €</dd></div>
+                  </dl>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="rounded-lg border border-stone-200 bg-white p-4 sm:p-5 shadow-sm hover:shadow-md transition" aria-labelledby="zapatillas-titulo">
+              <div class="grid grid-cols-[5rem_minmax(0,1fr)] items-start gap-4 md:grid-cols-[6rem_minmax(0,1fr)_auto_auto]">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Zapatillas urbanas de estilo deportivo" width="112" height="140" class="h-28 w-20 object-cover bg-stone-100 md:h-32 md:w-24">
+                <div class="min-w-0">
+                  <h3 id="zapatillas-titulo" class="text-base font-medium">Zapatillas urbanas</h3>
+                  <p class="mt-1 text-sm text-stone-600">Blanco / Negro</p>
+                  <dl class="mt-2 space-y-1 text-sm">
+                    <div class="flex flex-wrap gap-x-2"><dt class="text-stone-600">Talla:</dt><dd>39</dd></div>
+                    <div class="flex flex-wrap gap-x-2"><dt class="text-stone-600">Precio unitario:</dt><dd class="whitespace-nowrap">39,99 €</dd></div>
+                  </dl>
+                  <button type="button" class="mt-1 min-h-11 text-xs text-stone-600 underline underline-offset-4 hover:text-stone-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900">Eliminar<span class="sr-only"> Zapatillas urbanas</span></button>
+                </div>
+                <div class="col-span-2 flex items-center justify-between gap-3 border-t border-stone-200 pt-3 md:contents">
+                    <div class="flex shrink-0 items-center gap-2 text-sm md:self-center">
+                      <label for="cantidad-zapatillas" class="text-stone-600">Cantidad<span class="sr-only"> de Zapatillas urbanas</span>:</label>
+                        <select id="cantidad-zapatillas" name="cantidad-zapatillas" class="min-h-11 rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-900 focus:border-stone-900 focus:outline-none focus:ring-2 focus:ring-stone-900 focus:ring-offset-2">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                        </select>
+                    </div>
+                  <dl class="min-w-0 text-sm md:self-center md:justify-self-end">
+                    <div class="flex flex-wrap items-baseline justify-end gap-x-2"><dt class="text-stone-600">Total:</dt><dd class="font-semibold whitespace-nowrap tabular-nums">39,99 €</dd></div>
+                  </dl>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <form action="checkout.html" method="get" class="min-w-0 border-t border-stone-200 pt-6 lg:col-start-3 lg:row-start-1 lg:self-start lg:border-t-0 lg:border-l lg:pl-6 lg:pt-0" aria-labelledby="resumen-titulo">
+        <h2 id="resumen-titulo" class="text-lg font-semibold">Resumen del pedido</h2>
+        <dl class="mt-4 space-y-4 text-sm">
+          <div class="flex items-center justify-between gap-4"><dt class="text-stone-600">Subtotal</dt><dd class="whitespace-nowrap text-right tabular-nums">119,97 €</dd></div>
+          <div class="flex items-center justify-between gap-4"><dt class="text-stone-600">Envío</dt><dd class="text-right">Gratis</dd></div>
+          <div class="flex items-center justify-between gap-4"><dt class="text-stone-600">Impuestos</dt><dd class="whitespace-nowrap text-right tabular-nums">25,19 €</dd></div>
+          <div class="flex items-baseline justify-between gap-4 border-t border-stone-300 pt-4 font-semibold"><dt class="text-lg">Total</dt><dd class="whitespace-nowrap text-right text-2xl tabular-nums">145,16 €</dd></div>
+        </dl>
+        <p class="mt-4 text-xs leading-relaxed text-stone-600">Los impuestos y gastos aplicables se muestran antes de finalizar el pedido.</p>
+        <div class="mt-4 flex items-start gap-3">
+          <input id="aceptacion-compra" name="aceptacion" type="checkbox" value="aceptada" required class="mt-0.5 h-5 w-5 shrink-0 cursor-pointer accent-stone-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900">
+          <label for="aceptacion-compra" class="cursor-pointer text-sm leading-relaxed text-stone-600">He leído y acepto las <span class="font-medium text-stone-900">condiciones de compra</span> y la <span class="font-medium text-stone-900">política de privacidad</span>.</label>
+        </div>
+        <button type="submit" class="mt-4 flex min-h-12 w-full items-center justify-center rounded-md bg-stone-900 px-4 py-3 text-center text-sm font-semibold text-white hover:bg-black transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900">Finalizar compra</button>
+        <p class="mt-4 text-center text-xs leading-relaxed text-stone-600">Pago seguro · Tus datos están protegidos</p>
+        <a href="catalog.html" class="mt-4 flex min-h-12 w-full items-center justify-center rounded-md border border-stone-900 px-4 py-3 text-center text-sm font-medium text-stone-900 hover:bg-stone-100 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900">Seguir comprando</a>
+      </form>
+    </div>
+  </main>
+
+  <footer class="bg-stone-100 border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
+        <div class="col-span-2 sm:col-span-3 lg:col-span-1">
+          <a href="index.html" class="text-2xl font-bold text-stone-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900" aria-label="LUXE, página de inicio">LUXE<span class="text-stone-400">.</span></a>
+          <p class="mt-3 text-sm text-stone-600 leading-relaxed">Moda joven, moderna y al mejor precio.</p>
+        </div>
+        <div>
+          <h2 class="font-semibold text-sm text-stone-900 mb-4">Categorías</h2>
+          <ul class="space-y-2.5 text-sm text-stone-600">
+            <li><a href="catalog.html" class="hover:text-stone-900 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900">Mujer</a></li>
+            <li><a href="catalog.html" class="hover:text-stone-900 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900">Hombre</a></li>
+            <li><a href="catalog.html" class="hover:text-stone-900 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900">Accesorios</a></li>
+            <li><a href="catalog.html" class="hover:text-stone-900 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900">Novedades</a></li>
+            <li><a href="catalog.html" class="font-semibold text-stone-900 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900">Outlet</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-semibold text-sm text-stone-900 mb-4">Ayuda</h2>
+          <ul class="space-y-2.5 text-sm text-stone-600">
+            <li><a href="mailto:hola@luxe-store.com" class="hover:text-stone-900 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-stone-900">Contacto</a></li>
+            <li><span>Envíos y devoluciones</span></li>
+            <li><span>Guía de tallas</span></li>
+            <li><span>Pago seguro</span></li>
+            <li><span>Tarjeta regalo</span></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-semibold text-sm text-stone-900 mb-4">Empresa</h2>
+          <ul class="space-y-2.5 text-sm text-stone-600">
+            <li><span>Sobre LUXE</span></li>
+            <li><span>Tiendas</span></li>
+            <li><span>Trabaja con nosotros</span></li>
+            <li><span>Prensa</span></li>
+          </ul>
+        </div>
+        <div class="min-w-0">
+          <h2 class="font-semibold text-sm text-stone-900 mb-4">Atención</h2>
+          <ul class="space-y-2.5 text-sm text-stone-600">
+            <li><span>900 123 456</span></li>
+            <li><span class="break-words">hola@luxe-store.com</span></li>
+            <li><span class="text-xs">Lun–Sáb 9:00–21:00</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 pt-6 border-t border-stone-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-600">
+        <p>&copy; 2026 LUXE. Todos los derechos reservados.</p>
+        <div class="flex flex-wrap justify-center gap-x-5 gap-y-2">
+          <span>Aviso legal</span>
+          <span>Privacidad</span>
+          <span>Cookies</span>
+          <span>Configurar cookies</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
