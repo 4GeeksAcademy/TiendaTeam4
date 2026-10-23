@@ -16,7 +16,7 @@
       </nav>
     </div>
   </header>
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 group/catalog">
     <header class="mb-8 sm:mb-10">
       <p class="text-xs font-semibold uppercase tracking-wide text-stone-500">LUXE · Colección</p>
       <h1 class="mt-2 text-3xl sm:text-4xl font-bold text-stone-900">Mujer</h1>
@@ -27,17 +27,46 @@
       <a href="catalog-man.html" class="text-stone-600 hover:text-stone-900">Hombre</a>
       <a href="catalog-accessories.html" class="text-stone-600 hover:text-stone-900">Accesorios</a>
     </nav>
+    <fieldset class="mt-6">
+      <legend class="mb-3 text-sm font-medium text-stone-700">Talla</legend>
+      <div class="flex flex-wrap gap-2">
+        <div>
+          <input type="radio" id="size-all" name="catalog-size" value="all" class="peer sr-only" checked />
+          <label for="size-all" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">Todas</label>
+        </div>
+        <div>
+          <input type="radio" id="size-xs" name="catalog-size" value="xs" class="peer sr-only" />
+          <label for="size-xs" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">XS</label>
+        </div>
+        <div>
+          <input type="radio" id="size-s" name="catalog-size" value="s" class="peer sr-only" />
+          <label for="size-s" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">S</label>
+        </div>
+        <div>
+          <input type="radio" id="size-m" name="catalog-size" value="m" class="peer sr-only" />
+          <label for="size-m" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">M</label>
+        </div>
+        <div>
+          <input type="radio" id="size-l" name="catalog-size" value="l" class="peer sr-only" />
+          <label for="size-l" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">L</label>
+        </div>
+        <div>
+          <input type="radio" id="size-xl" name="catalog-size" value="xl" class="peer sr-only" />
+          <label for="size-xl" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">XL</label>
+        </div>
+      </div>
+    </fieldset>
     <section class="mt-8" aria-label="Productos de mujer">
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5">
         <article class="bg-white group">
           <a href="products/chaqueton-oversize.html" class="block">
             <div class="aspect-[3/4] bg-stone-100 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Chaquetón oversize en tonos beige" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="1067" />
+              <img src="https://cdn.shopify.com/s/files/1/0061/8627/0804/files/0-modelinfo-kayla-us2_bd7f7050-0067-4645-a7e8-274635da246d.jpg?v=1791328433&amp;width=800" alt="Chaquetón oversize marrón de acabado efecto pelo" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="1067" />
               <span class="absolute top-2 left-2 bg-stone-900 text-white text-[10px] font-semibold px-2 py-0.5">NUEVO</span>
             </div>
             <div class="pt-3 pb-1">
               <h2 class="font-medium text-stone-900 text-sm sm:text-base">Chaquetón oversize</h2>
-              <p class="text-xs text-stone-500 mt-0.5">Beige / Marrón</p>
+              <p class="text-xs text-stone-500 mt-0.5">Marrón</p>
               <div class="flex items-center gap-2 mt-2"><span class="text-stone-900 font-bold text-sm sm:text-base">49,99 €</span></div>
             </div>
           </a>
@@ -70,11 +99,11 @@
         <article class="bg-white group">
           <a href="products/falda-plisada.html" class="block">
             <div class="aspect-[3/4] bg-stone-100 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Falda plisada negra" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="1067" />
+              <img src="https://cdn.shopify.com/s/files/1/0578/4594/0376/files/women_s-woven-polyester-skirt-bottoms-jzampz.jpg?v=1757410100&amp;width=800" alt="Falda plisada marrón con bolsillos y textura de espiga" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="1067" />
             </div>
             <div class="pt-3 pb-1">
               <h2 class="font-medium text-stone-900 text-sm sm:text-base">Falda plisada</h2>
-              <p class="text-xs text-stone-500 mt-0.5">Negro</p>
+              <p class="text-xs text-stone-500 mt-0.5">Marrón</p>
               <div class="flex items-center gap-2 mt-2"><span class="text-stone-900 font-bold text-sm sm:text-base">27,99 €</span></div>
             </div>
           </a>
@@ -106,7 +135,7 @@
         <article class="bg-white group">
           <a href="products/chaqueta-denim.html" class="block">
             <div class="aspect-[3/4] bg-stone-100 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Chaqueta denim azul" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="1067" />
+              <img src="https://cdn.shopify.com/s/files/1/0061/8627/0804/files/1-modelinfo-claire-us4_0d638cca-1f9e-4d4d-ad21-063b4b262adc.jpg?v=1756342300&amp;width=800" alt="Chaqueta denim azul de corte amplio con bolsillos delanteros" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="1067" />
             </div>
             <div class="pt-3 pb-1">
               <h2 class="font-medium text-stone-900 text-sm sm:text-base">Chaqueta denim</h2>
@@ -118,7 +147,7 @@
         <article class="bg-white group">
           <a href="products/top-satinado.html" class="block">
             <div class="aspect-[3/4] bg-stone-100 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Top satinado color champagne" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="1067" />
+              <img src="https://cdn.shopify.com/s/files/1/0061/8627/0804/files/0-modelinfo-lily-us4_dc3c8890-5786-42d0-aca4-1753a94ba7ff.jpg?v=1781821882&amp;width=800" alt="Top satinado champagne de tirantes y cuerpo entallado" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="1067" />
             </div>
             <div class="pt-3 pb-1">
               <h2 class="font-medium text-stone-900 text-sm sm:text-base">Top satinado</h2>

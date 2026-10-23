@@ -19,7 +19,7 @@ def serve_dir_directory_index():
         # if app.py exists we use the render function
         out = subprocess.Popen(['python3','app.py'], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
         stdout,stderr = out.communicate()
-        return stdout if out.returncode == 0 else f"<pre style='color: red;'>{stdout.decode('utf-8')}</pre>"
+        return stdout if out.returncode == 0 else f"<pre>{stdout.decode('utf-8')}</pre>"
     if os.path.exists("index.html"):
         return send_from_directory(static_file_dir, 'index.html')
     else:
@@ -34,4 +34,4 @@ def serve_any_other_file(path):
     response.cache_control.max_age = 0 # avoid cache memory
     return response
 
-app.run(host='0.0.0.0',port=3000, debug=True, extra_files=['./',])
+app.run(host='0.0.0.0',port=3000, debug=False)

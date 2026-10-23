@@ -5,20 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LUXE — Tu tienda de moda</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brandDark: '#0f172a',
-            brandAccent: '#d97706',
-            brandBg: '#fafaf9'
-          }
-        }
-      }
-    };
-  </script>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👕</text></svg>" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%20100%20100'%3E%3Ctext%20y%3D'.9em'%20font-size%3D'90'%3E%F0%9F%91%95%3C%2Ftext%3E%3C%2Fsvg%3E" />
 </head>
 <body class="bg-stone-50 text-stone-900 font-sans antialiased">
 
@@ -38,27 +26,30 @@
 
       <!-- Actions -->
       <div class="flex items-center gap-3">
-        <button class="hidden sm:block text-stone-500 hover:text-stone-900 transition-colors" aria-label="Buscar">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" />
-          </svg>
-        </button>
+
         <a href="cart.html" class="text-stone-500 hover:text-stone-900 transition-colors relative" aria-label="Carrito">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z" />
           </svg>
           <span class="absolute -top-2 -right-2 bg-stone-900 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">3</span>
         </a>
-        <button class="md:hidden text-stone-500 hover:text-stone-900 transition-colors" aria-label="Menú">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <details class="relative md:hidden">
+          <summary class="list-none cursor-pointer text-stone-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-stone-900 [&::-webkit-details-marker]:hidden" aria-label="Abrir navegación"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
+          </svg></summary>
+          <nav class="absolute right-0 top-10 w-44 border border-stone-200 bg-white p-3 text-sm shadow-sm" aria-label="Navegación móvil">
+            <a href="catalog.html" class="block py-2 hover:underline">Catálogo</a>
+            <a href="catalog-woman.html" class="block py-2 hover:underline">Mujer</a>
+            <a href="catalog-man.html" class="block py-2 hover:underline">Hombre</a>
+            <a href="catalog-accessories.html" class="block py-2 hover:underline">Accesorios</a>
+          </nav>
+        </details>
       </div>
     </div>
   </header>
 
   <!-- ====== HERO VISUAL ====== -->
+  <main id="contenido">
   <section class="relative bg-stone-100 overflow-hidden">
     <div class="relative isolate w-full min-h-[60vh] sm:min-h-[70vh] lg:min-h-[80vh] flex items-center justify-center">
       <div class="absolute inset-0 z-0 grid grid-cols-2">
@@ -96,7 +87,7 @@
           <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Modelo con ropa contemporánea para mujer" class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-300" />
         </div>
         <div class="p-4">
-          <h3 class="font-semibold text-stone-900 text-base">Mujer</h3>
+          <h2 class="font-semibold text-stone-900 text-base">Mujer</h2>
           <p class="text-sm text-stone-500">Las últimas tendencias</p>
         </div>
       </a>
@@ -106,7 +97,7 @@
           <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Modelo con prendas de moda masculina" class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-300" />
         </div>
         <div class="p-4">
-          <h3 class="font-semibold text-stone-900 text-base">Hombre</h3>
+          <h2 class="font-semibold text-stone-900 text-base">Hombre</h2>
           <p class="text-sm text-stone-500">Moda urbana y clásicos</p>
         </div>
       </a>
@@ -116,7 +107,7 @@
           <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Mochila y accesorios para uso diario" class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-300" />
         </div>
         <div class="p-4">
-          <h3 class="font-semibold text-stone-900 text-base">Accesorios</h3>
+          <h2 class="font-semibold text-stone-900 text-base">Accesorios</h2>
           <p class="text-sm text-stone-500">Complementos que marcan</p>
         </div>
       </a>
@@ -141,12 +132,12 @@
       <article class="bg-white group">
         <a href="products/chaqueton-oversize.html" class="block">
         <div class="aspect-[3/4] bg-stone-100 overflow-hidden relative">
-          <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Chaquetón oversize en tonos beige" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" />
+          <img src="https://cdn.shopify.com/s/files/1/0061/8627/0804/files/0-modelinfo-kayla-us2_bd7f7050-0067-4645-a7e8-274635da246d.jpg?v=1791328433&amp;width=800" alt="Chaquetón oversize marrón de acabado efecto pelo" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" />
           <span class="absolute top-2 left-2 bg-stone-900 text-white text-[10px] font-semibold px-2 py-0.5">NUEVO</span>
         </div>
         <div class="pt-3 pb-1">
           <h3 class="font-medium text-stone-900 text-sm sm:text-base">Chaquetón oversize</h3>
-          <p class="text-xs text-stone-500 mt-0.5">Beige / Marrón</p>
+          <p class="text-xs text-stone-500 mt-0.5">Marrón</p>
           <div class="flex items-center gap-2 mt-2">
             <span class="text-stone-900 font-bold text-sm sm:text-base">49,99 €</span>
           </div>
@@ -333,6 +324,8 @@
   </section>
 
   <!-- ====== FOOTER ====== -->
+  </main>
+
   <footer class="bg-stone-100 border-t border-stone-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
 
@@ -361,7 +354,7 @@
 
         <!-- Categorías -->
         <div>
-          <h4 class="font-semibold text-sm text-stone-900 mb-4">Categorías</h4>
+          <h2 class="font-semibold text-sm text-stone-900 mb-4">Categorías</h2>
           <ul class="space-y-2.5 text-sm text-stone-600">
             <li><a href="catalog-woman.html" class="hover:text-stone-900 transition">Mujer</a></li>
             <li><a href="catalog-man.html" class="hover:text-stone-900 transition">Hombre</a></li>
@@ -373,7 +366,7 @@
 
         <!-- Ayuda -->
         <div>
-          <h4 class="font-semibold text-sm text-stone-900 mb-4">Ayuda</h4>
+          <h2 class="font-semibold text-sm text-stone-900 mb-4">Ayuda</h2>
           <ul class="space-y-2.5 text-sm text-stone-600">
             <li><a href="mailto:hola@luxe-store.com" class="hover:text-stone-900 transition">Contacto</a></li>
             <li><a href="checkout.html" class="hover:text-stone-900 transition">Envíos y devoluciones</a></li>
@@ -385,7 +378,7 @@
 
         <!-- Empresa -->
         <div>
-          <h4 class="font-semibold text-sm text-stone-900 mb-4">Empresa</h4>
+          <h2 class="font-semibold text-sm text-stone-900 mb-4">Empresa</h2>
           <ul class="space-y-2.5 text-sm text-stone-600">
             <li><a href="index.html" class="hover:text-stone-900 transition">Sobre LUXE</a></li>
             <li><a href="catalog.html" class="hover:text-stone-900 transition">Tiendas</a></li>
@@ -396,7 +389,7 @@
 
         <!-- Atención al cliente extra -->
         <div>
-          <h4 class="font-semibold text-sm text-stone-900 mb-4">Atención</h4>
+          <h2 class="font-semibold text-sm text-stone-900 mb-4">Atención</h2>
           <ul class="space-y-2.5 text-sm text-stone-600">
             <li><span class="block">📞 900 123 456</span></li>
             <li><span class="block">📧 hola@luxe-store.com</span></li>

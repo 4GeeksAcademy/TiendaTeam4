@@ -16,7 +16,7 @@
       </nav>
     </div>
   </header>
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 group/catalog">
     <header class="mb-8 sm:mb-10">
       <p class="text-xs font-semibold uppercase tracking-wide text-stone-500">LUXE · Colección</p>
       <h1 class="mt-2 text-3xl sm:text-4xl font-bold text-stone-900">Accesorios</h1>
@@ -27,6 +27,19 @@
       <a href="catalog-man.html" class="text-stone-600 hover:text-stone-900">Hombre</a>
       <a href="catalog-accessories.html" class="font-semibold text-stone-900 underline underline-offset-8" aria-current="page">Accesorios</a>
     </nav>
+    <fieldset class="mt-6">
+      <legend class="mb-3 text-sm font-medium text-stone-700">Talla</legend>
+      <div class="flex flex-wrap gap-2">
+        <div>
+          <input type="radio" id="size-all" name="catalog-size" value="all" class="peer sr-only" checked />
+          <label for="size-all" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">Todas</label>
+        </div>
+        <div>
+          <input type="radio" id="size-unica" name="catalog-size" value="única" class="peer sr-only" />
+          <label for="size-unica" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">Única</label>
+        </div>
+      </div>
+    </fieldset>
     <section class="mt-8" aria-label="Productos de accesorios">
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5">
         <article class="bg-white group">

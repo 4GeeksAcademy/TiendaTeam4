@@ -16,7 +16,7 @@
       </nav>
     </div>
   </header>
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 group/catalog">
     <header class="mb-8 sm:mb-10">
       <p class="text-xs font-semibold uppercase tracking-wide text-stone-500">LUXE · Colección</p>
       <h1 class="mt-2 text-3xl sm:text-4xl font-bold text-stone-900">Hombre</h1>
@@ -27,9 +27,74 @@
       <a href="catalog-man.html" class="font-semibold text-stone-900 underline underline-offset-8" aria-current="page">Hombre</a>
       <a href="catalog-accessories.html" class="text-stone-600 hover:text-stone-900">Accesorios</a>
     </nav>
+    <fieldset class="mt-6">
+      <legend class="mb-3 text-sm font-medium text-stone-700">Talla</legend>
+      <div class="flex flex-wrap gap-2">
+        <div>
+          <input type="radio" id="size-all" name="catalog-size" value="all" class="peer sr-only" checked />
+          <label for="size-all" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">Todas</label>
+        </div>
+        <div>
+          <input type="radio" id="size-xs" name="catalog-size" value="xs" class="peer sr-only" />
+          <label for="size-xs" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">XS</label>
+        </div>
+        <div>
+          <input type="radio" id="size-s" name="catalog-size" value="s" class="peer sr-only" />
+          <label for="size-s" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">S</label>
+        </div>
+        <div>
+          <input type="radio" id="size-m" name="catalog-size" value="m" class="peer sr-only" />
+          <label for="size-m" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">M</label>
+        </div>
+        <div>
+          <input type="radio" id="size-l" name="catalog-size" value="l" class="peer sr-only" />
+          <label for="size-l" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">L</label>
+        </div>
+        <div>
+          <input type="radio" id="size-xl" name="catalog-size" value="xl" class="peer sr-only" />
+          <label for="size-xl" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">XL</label>
+        </div>
+        <div>
+          <input type="radio" id="size-36" name="catalog-size" value="36" class="peer sr-only" />
+          <label for="size-36" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">36</label>
+        </div>
+        <div>
+          <input type="radio" id="size-37" name="catalog-size" value="37" class="peer sr-only" />
+          <label for="size-37" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">37</label>
+        </div>
+        <div>
+          <input type="radio" id="size-38" name="catalog-size" value="38" class="peer sr-only" />
+          <label for="size-38" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">38</label>
+        </div>
+        <div>
+          <input type="radio" id="size-39" name="catalog-size" value="39" class="peer sr-only" />
+          <label for="size-39" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">39</label>
+        </div>
+        <div>
+          <input type="radio" id="size-40" name="catalog-size" value="40" class="peer sr-only" />
+          <label for="size-40" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">40</label>
+        </div>
+        <div>
+          <input type="radio" id="size-41" name="catalog-size" value="41" class="peer sr-only" />
+          <label for="size-41" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">41</label>
+        </div>
+        <div>
+          <input type="radio" id="size-42" name="catalog-size" value="42" class="peer sr-only" />
+          <label for="size-42" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">42</label>
+        </div>
+        <div>
+          <input type="radio" id="size-43" name="catalog-size" value="43" class="peer sr-only" />
+          <label for="size-43" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">43</label>
+        </div>
+        <div>
+          <input type="radio" id="size-44" name="catalog-size" value="44" class="peer sr-only" />
+          <label for="size-44" class="flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-md border border-stone-300 bg-white px-3 py-2 text-sm text-stone-700 peer-checked:border-stone-900 peer-checked:bg-stone-900 peer-checked:text-white peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-stone-900">44</label>
+        </div>
+      </div>
+    </fieldset>
     <section class="mt-8" aria-label="Productos de hombre">
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5">
-        <article class="bg-white group">
+        <article class="bg-white group group-has-[#size-36:checked]/catalog:hidden group-has-[#size-37:checked]/catalog:hidden group-has-[#size-38:checked]/catalog:hidden group-has-[#size-39:checked]/catalog:hidden group-has-[#size-40:checked]/catalog:hidden group-has-[#size-41:checked]/catalog:hidden group-has-[#size-42:checked]/catalog:hidden group-has-[#size-43:checked]/catalog:hidden group-has-[#size-44:checked]/catalog:hidden">
           <a href="products/sudadera-basica.html" class="block">
             <div class="aspect-[3/4] bg-stone-100 overflow-hidden relative">
               <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Sudadera básica en tonos neutros" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="1067" />
@@ -42,7 +107,7 @@
             </div>
           </a>
         </article>
-        <article class="bg-white group">
+        <article class="bg-white group group-has-[#size-36:checked]/catalog:hidden group-has-[#size-37:checked]/catalog:hidden group-has-[#size-38:checked]/catalog:hidden group-has-[#size-39:checked]/catalog:hidden group-has-[#size-40:checked]/catalog:hidden group-has-[#size-41:checked]/catalog:hidden group-has-[#size-42:checked]/catalog:hidden group-has-[#size-43:checked]/catalog:hidden group-has-[#size-44:checked]/catalog:hidden">
           <a href="products/pantalon-recto.html" class="block">
             <div class="aspect-[3/4] bg-stone-100 overflow-hidden relative">
               <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Pantalón recto negro sobre fondo claro" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="1067" />
@@ -54,7 +119,7 @@
             </div>
           </a>
         </article>
-        <article class="bg-white group">
+        <article class="bg-white group group-has-[#size-36:checked]/catalog:hidden group-has-[#size-37:checked]/catalog:hidden group-has-[#size-38:checked]/catalog:hidden group-has-[#size-39:checked]/catalog:hidden group-has-[#size-40:checked]/catalog:hidden group-has-[#size-41:checked]/catalog:hidden group-has-[#size-42:checked]/catalog:hidden group-has-[#size-43:checked]/catalog:hidden group-has-[#size-44:checked]/catalog:hidden">
           <a href="products/jersey-de-punto.html" class="block">
             <div class="aspect-[3/4] bg-stone-100 overflow-hidden relative">
               <img src="https://cdn.shopify.com/s/files/1/0053/5615/9064/files/CS5083_Male_ClassicMerinoWoolCrew-IvoryWhite_2_22f80f87-3a05-4eba-8085-df5ed024d828.jpg?v=1746086766&amp;width=800" alt="Jersey masculino de punto crudo y cuello redondo sobre fondo claro" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="1067" />
@@ -66,7 +131,7 @@
             </div>
           </a>
         </article>
-        <article class="bg-white group">
+        <article class="bg-white group group-has-[#size-36:checked]/catalog:hidden group-has-[#size-37:checked]/catalog:hidden group-has-[#size-38:checked]/catalog:hidden group-has-[#size-39:checked]/catalog:hidden group-has-[#size-40:checked]/catalog:hidden group-has-[#size-41:checked]/catalog:hidden group-has-[#size-42:checked]/catalog:hidden group-has-[#size-43:checked]/catalog:hidden group-has-[#size-44:checked]/catalog:hidden">
           <a href="products/camiseta-algodon.html" class="block">
             <div class="aspect-[3/4] bg-stone-100 overflow-hidden relative">
               <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Camiseta básica blanca" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="1067" />
@@ -78,7 +143,7 @@
             </div>
           </a>
         </article>
-        <article class="bg-white group">
+        <article class="bg-white group group-has-[#size-36:checked]/catalog:hidden group-has-[#size-37:checked]/catalog:hidden group-has-[#size-38:checked]/catalog:hidden group-has-[#size-39:checked]/catalog:hidden group-has-[#size-40:checked]/catalog:hidden group-has-[#size-41:checked]/catalog:hidden group-has-[#size-42:checked]/catalog:hidden group-has-[#size-43:checked]/catalog:hidden group-has-[#size-44:checked]/catalog:hidden">
           <a href="products/cazadora-vaquera.html" class="block">
             <div class="aspect-[3/4] bg-stone-100 overflow-hidden relative">
               <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Cazadora negra de polipiel" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="1067" />
@@ -94,7 +159,7 @@
             </div>
           </a>
         </article>
-        <article class="bg-white group">
+        <article class="bg-white group group-has-[#size-36:checked]/catalog:hidden group-has-[#size-37:checked]/catalog:hidden group-has-[#size-38:checked]/catalog:hidden group-has-[#size-39:checked]/catalog:hidden group-has-[#size-40:checked]/catalog:hidden group-has-[#size-41:checked]/catalog:hidden group-has-[#size-42:checked]/catalog:hidden group-has-[#size-43:checked]/catalog:hidden group-has-[#size-44:checked]/catalog:hidden">
           <a href="products/pantalon-cargo.html" class="block">
             <div class="aspect-[3/4] bg-stone-100 overflow-hidden relative">
               <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Pantalón cargo de corte casual" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="1067" />
@@ -106,7 +171,7 @@
             </div>
           </a>
         </article>
-        <article class="bg-white group">
+        <article class="bg-white group group-has-[#size-xs:checked]/catalog:hidden group-has-[#size-s:checked]/catalog:hidden group-has-[#size-m:checked]/catalog:hidden group-has-[#size-l:checked]/catalog:hidden group-has-[#size-xl:checked]/catalog:hidden">
           <a href="products/zapatillas-urbanas.html" class="block">
             <div class="aspect-[3/4] bg-stone-100 overflow-hidden relative">
               <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Zapatillas urbanas rojas con suela blanca" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" width="800" height="1067" />
